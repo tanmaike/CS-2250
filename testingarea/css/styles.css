@@ -1,0 +1,16 @@
+h3, li.happy {
+    color: red;
+    font-size: 60px;
+}
+
+body {
+    color: green;
+    background: url("../picture/furio_header.png");
+    background-size: cover;
+    text-align: center;
+}
+
+body .content {
+    border: 2px solid hotpink;
+    margin: 50px
+}
