@@ -1,0 +1,31 @@
+.mainheader {
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    width: 35%;
+    border: 3px #404040;
+    padding: 3px;
+}
+
+h1.headertext {
+    font-size: 48px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#fcc9b9;
+}
+
+h2.subheader {
+    font-size: 36px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+
+.textbackground {
+    background-color: #fcc9b9;
+    width: 65%;
+}
+
+p.generaltext {
+    font-size: 16px;
+    color:#404040;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
