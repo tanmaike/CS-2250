@@ -1,9 +1,21 @@
+body.pagebackground {
+    background-image: url(../media/heat_background_icon.jpg);
+    background-color: white;
+    background-position: right top;
+    background-size: cover;
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    opacity: 0.95;
+}
+
 .mainheader {
     margin: auto;
     background-color: white;
     text-align: center;
     width: 35%;
     border: 3px #404040;
+    border-radius: 6px;
+    border-style: solid;
     padding: 3px;
 }
 
@@ -14,14 +26,14 @@
 }
 
 .mainbody {
-    display:grid;
+    display: grid;
     justify-content: space-between;
     align-items: center;
 }
 
 h1.headertext {
     font-size: 48px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
     color:#fcc9b9;
 }
 
@@ -33,9 +45,28 @@ h2.subheader {
     color:white;
 }
 
+h3.subheaderIng {
+    font-size: 24px;
+    margin-left: -135%;
+    margin-right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+
+h3.subheaderPro {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+
 .headerimage {
+    border: 4px white;
     border-radius: 8px;
-    max-width: 98%;
+    border-style: solid;
+    max-width: 97%;
+    max-height: 90%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -43,7 +74,9 @@ h2.subheader {
 }
 
 .mainimage {
+    border: 4px white;
     border-radius: 8px;
+    border-style: solid;
     max-width: 50%;
     height: auto;
     display: block;
@@ -51,14 +84,30 @@ h2.subheader {
     margin-right: auto;
 }
 
+img.ingredientimage {
+    border: 4px white;
+    border-radius: 8px;
+    border-style: solid;
+    max-width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
 .introtextbackground {
     background-color: #fcc9b9;
-    width: 62.5%;
+    width: 65%;
+    border: 1.25% white;
     border-radius: 2.5%;
+    border-style: solid;
 }
 
 .sideinformation {
+    background-color: white;
     border: 3px #fcc9b9;
+    border-radius: 6px;
+    border-style: solid;
     width: 32.5%;
     padding: 3px;
 }
@@ -70,18 +119,34 @@ h2.subheader {
 }
 
 .sidelinkslist {
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 .sidetext {
+    width: auto;
+    text-align-last: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img.sideimage {
+    border: 4px #fcc9b9;
+    border-radius: 8px;
+    border-style: solid;
+    max-width: 97%;
+    max-height: 90%;
+    height: auto;
+    align-items: center;
+}
+
+a.sidelink {
     font-size: 16px;
-    text-align: center;
     color:#fcc9b9;
     transition: color 0.5s, background-color 0.5s;
 }
 
-.sidetext:hover {
+.sidelink:hover {
     color:white;
     background-color: #fcc9b9;
 }
@@ -91,10 +156,12 @@ h2.subheader {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    border: 1.25% white;
     border-radius: 2.5%;
+    border-style: solid;
 }
 
-p.generaltext {
+.generaltext {
     font-size: 16px;
     margin-left: 5px;
     margin-right: 5px;
@@ -113,3 +180,28 @@ p.generaltext {
     background-color: white;
 }
 
+.pictureingredient {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.ingredients {
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-left: -150%;
+    margin-right: 5%;
+}
+
+li.ingredienttext {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color:#404040;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ol.process {
+    list-style-type:decimal;
+    list-style-position: inside;
+}
