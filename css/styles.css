@@ -9,6 +9,8 @@ body.pagebackground {
     animation-name: fadein;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    background-attachment: fixed;
 }
 
 .mainheader {
@@ -20,18 +22,40 @@ body.pagebackground {
     border-radius: 6px;
     border-style: solid;
     padding: 3px;
+    animation-name: blowup;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+}
+
+@keyframes blowup {
+    0% {
+        scale: 100%
+    }
+    40% {
+        scale: 50%
+    }
+    60% {
+        scale: 50%
+    }
+    100% {
+        scale: 100%
+    }
 }
 
 .topbody {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: #404040;
 }
 
 .mainbody {
     display: grid;
     justify-content: space-between;
     align-items: center;
+    box-shadow: #404040;
 }
 
 h1.headertext {
@@ -86,17 +110,6 @@ h3.subheaderPro {
     }
 }
 
-.mainimage {
-    border: 4px white;
-    border-radius: 8px;
-    border-style: solid;
-    max-width: 50%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 img.ingredientimage {
     border: 4px white;
     border-radius: 8px;
@@ -106,6 +119,7 @@ img.ingredientimage {
     display: block;
     margin-left: 5%;
     margin-right: auto;
+    break-inside: avoid;
 }
 
 .introtextbackground {
@@ -135,12 +149,16 @@ img.ingredientimage {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: #404040;
 }
 
 .sidetext {
+    gap: 10px;
     width: auto;
     text-align-last: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 img.sideimage {
@@ -150,7 +168,11 @@ img.sideimage {
     max-width: 97%;
     max-height: 90%;
     height: auto;
-    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100px;
+    min-width: 100px;
 }
 
 a.sidelink {
@@ -198,6 +220,7 @@ a.sidelink {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-block: 10px
 }
 
 ul.ingredients {
