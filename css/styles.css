@@ -44,11 +44,33 @@ body.pagebackground {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .mainheader {
+        width: 55%;
+    }
+}
+
 .topbody {
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: #404040;
+}
+
+@media screen and (max-width: 1000px) {
+    .topbody {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sideinformation {
+        scale: 150%;
+        transform: translate(0px, 950px);
+    }
+    .maintextbackground {
+        transform: translate(0px, -675px);
+    }
 }
 
 .mainbody {
@@ -72,6 +94,15 @@ h2.subheader {
     color:white;
 }
 
+h2#recipe_section.subheader {
+    font-size: 36px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+
 h3.subheaderIng {
     font-size: 24px;
     margin-left: -135%;
@@ -82,7 +113,7 @@ h3.subheaderIng {
 
 h3.subheaderPro {
     font-size: 24px;
-    margin-left: 10px;
+    margin-left: 40px;
     margin-right: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:white;
