@@ -31,16 +31,16 @@ body.pagebackground {
 
 @keyframes blowup {
     0% {
-        scale: 100%
+        transform: scale(1);
     }
     40% {
-        scale: 50%
+        transform: scale(0.5);
     }
     60% {
-        scale: 50%
+        transform: scale(0.5);
     }
     100% {
-        scale: 100%
+        transform: scale(1);
     }
 }
 
@@ -54,7 +54,6 @@ body.pagebackground {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: #404040;
 }
 
 @media screen and (max-width: 1000px) {
@@ -65,11 +64,11 @@ body.pagebackground {
         align-items: center;
     }
     .sideinformation {
-        scale: 150%;
-        transform: translate(0px, 950px);
+        transform: scale(1.5);
+        transform: translate(0px, 975px);
     }
     .maintextbackground {
-        transform: translate(0px, -675px);
+        transform: translate(0px, -650px);
     }
 }
 
@@ -77,7 +76,6 @@ body.pagebackground {
     display: grid;
     justify-content: space-between;
     align-items: center;
-    box-shadow: #404040;
 }
 
 h1.headertext {
@@ -156,7 +154,6 @@ img.ingredientimage {
 .introtextbackground {
     background-color: #fcc9b9;
     width: 65%;
-    border: 1.25% white;
     border-radius: 2.5%;
     border-style: solid;
 }
@@ -180,7 +177,6 @@ img.ingredientimage {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: #404040;
 }
 
 .sidetext {
@@ -223,7 +219,6 @@ a.sidelink {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    border: 1.25% white;
     border-radius: 2.5%;
     border-style: solid;
 }
