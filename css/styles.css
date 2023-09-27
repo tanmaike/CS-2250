@@ -1,0 +1,273 @@
+body.pagebackground {
+    background-image: url(../media/heat_background_icon.jpg);
+    background-color: white;
+    background-position: right top;
+    background-size: cover;
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    opacity: 0.95;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    background-attachment: fixed;
+}
+
+.mainheader {
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    width: 35%;
+    border: 3px #404040;
+    border-radius: 6px;
+    border-style: solid;
+    padding: 3px;
+    animation-name: blowup;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+}
+
+@keyframes blowup {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(0.5);
+    }
+    60% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1375px) {
+    .mainheader {
+        width: 55%;
+    }
+}
+
+.topbody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .topbody {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sideinformation {
+        transform: scale(1.5);
+        transform: translate(0px, 50px);
+    }
+    .maintextbackground {
+        transform: translate(0px, 100px);
+    }
+    .ingredientimage {
+        transform: scale(0);
+    }
+}
+
+.mainbody {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1.headertext {
+    font-size: 48px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    color:#fcc9b9;
+}
+
+h2.subheader {
+    font-size: 36px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+
+h2#recipe_section.subheader {
+    font-size: 36px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+
+h3.subheaderIng {
+    font-size: 24px;
+    margin-left: -135%;
+    margin-right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+
+h3.subheaderPro {
+    font-size: 24px;
+    margin-left: 40px;
+    margin-right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}
+
+.headerimage {
+    border: 4px white;
+    border-radius: 8px;
+    border-style: solid;
+    max-width: 97%;
+    max-height: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 95%;
+    }
+}
+
+img.ingredientimage {
+    border: 4px white;
+    border-radius: 8px;
+    border-style: solid;
+    max-width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: 5%;
+    margin-right: auto;
+    break-inside: avoid;
+}
+
+.introtextbackground {
+    background-color: #fcc9b9;
+    width: 65%;
+    border-radius: 2.5%;
+    border-style: solid;
+}
+
+.sideinformation {
+    background-color: white;
+    border: 3px #fcc9b9;
+    border-radius: 6px;
+    border-style: solid;
+    width: 32.5%;
+    padding: 3px;
+}
+
+.sideheader {
+    font-size: 24px;
+    text-align: center;
+    color:#fcc9b9;
+}
+
+.sidelinkslist {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidetext {
+    gap: 10px;
+    width: auto;
+    text-align-last: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img.sideimage {
+    border: 4px #fcc9b9;
+    border-radius: 8px;
+    border-style: solid;
+    max-width: 97%;
+    max-height: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+a.sidelink {
+    font-size: 16px;
+    color:#fcc9b9;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.sidelink:hover,
+.sidelink:active {
+    color:white;
+    background-color: #fcc9b9;
+}
+
+.maintextbackground {
+    background-color: #fcc9b9;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5%;
+    border-style: solid;
+}
+
+.generaltext {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color:#404040;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.insertedlink {
+    font-size: 16px;
+    color:white;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.insertedlink:hover {
+    color:#fcc9b9;
+    background-color: white;
+}
+
+.pictureingredient {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 10px
+}
+
+ul.ingredients {
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-left: -150%;
+    margin-right: 5%;
+}
+
+li.ingredienttext {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color:#404040;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ol.process {
+    list-style-type:decimal;
+    list-style-position: inside;
+}
