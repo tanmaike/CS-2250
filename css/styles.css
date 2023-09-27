@@ -151,6 +151,12 @@ img.ingredientimage {
     break-inside: avoid;
 }
 
+@media screen and (max-width: 750px) {
+    img.ingredientimage {
+        transform: scale(0);
+    }
+}
+
 .introtextbackground {
     background-color: #fcc9b9;
     width: 65%;
