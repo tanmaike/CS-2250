@@ -65,10 +65,10 @@ body.pagebackground {
     }
     .sideinformation {
         transform: scale(1.5);
-        transform: translate(0px, 1550px);
+        transform: translate(0px, 1650px);
     }
     .maintextbackground {
-        transform: translate(0px, -600px);
+        transform: translate(0px, -300px);
     }
 }
 
