@@ -68,7 +68,14 @@ body.pagebackground {
         transform: translate(0px, 1650px);
     }
     .maintextbackground {
-        transform: translate(0px, -300px);
+        transform: translate(0px, -900px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sideinformation {
+        transform: scale(1.5);
+        transform: translate(0px, 1650px);
     }
 }
 
