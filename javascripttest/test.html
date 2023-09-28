@@ -1,0 +1,20 @@
+<hmtl>
+    <head>
+        
+    </head>
+    <body>
+        <ul>
+
+        </ul>
+        <script>
+            const fruits = ["Apple", "Grapes", "Mango", "Strawberries", "Dragonfruit"];
+            let output = "";
+            for (let fruit of fruits) {
+                output += `<li>${fruit}</li>` // do not use "<li>" + fruit + "</li>";
+            }
+
+            const list = document.querySelector("ul");
+            list.innerHTML = output;
+        </script>
+    </body>
+</hmtl>
