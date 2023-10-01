@@ -1,0 +1,82 @@
+#calcBody {
+    flex-direction: column;
+    background-color: #c8c8c8;
+    width: 360px;
+    height: 505px;
+    align-items: center;
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0.75) rgba(255, 255, 255, 0.75)  rgba(119, 150, 150, 0.75) rgba(150, 150, 150, 0.75);
+    border-style: solid;
+}
+
+#calcDisplay {
+    width: 335px;
+    height: 75px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    box-shadow: rgba(19, 19, 19, 0.25) 0px 10px 20px -4px inset, rgba(0, 0, 0, 0.25) 0px 4px 8px -4px inset;
+    border-color: rgba(119, 150, 150, 0.75) rgba(150, 150, 150, 0.75) rgba(255, 255, 255, 0.75) rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    border-style: solid;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    text-align: right;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+table td {
+    width: 75px;
+    height: 75px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0px 1px 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.75) rgba(255, 255, 255, 0.75)  rgba(119, 150, 150, 0.75) rgba(150, 150, 150, 0.75);
+    border-radius: 5px;
+}
+
+table td#numberButton {
+    background-image: linear-gradient(#e1e1e1, #e1e1e1, #e1e1e1, #c8c8c8, #afafaf, #afafaf, #afafaf);
+    color: #191919;
+}
+
+table td#numberButton:hover {
+    background-image: linear-gradient(#d4d4d4, #d4d4d4, #d4d4d4, #bababa, #a6a6a6, #a6a6a6, #a6a6a6);
+}
+
+table td#numberButton:active {
+    background-image: linear-gradient(#c7c7c7, #c7c7c7, #c7c7c7, #adadad, #999999, #999999, #999999);
+}
+
+table td#operationButton {
+    background-image: linear-gradient(#616161, #616161, #616161, #474747, #303030, #303030, #303030);
+    color: #f2f2f2;
+    text-shadow: -1px 0 #191919, 0 1px #191919, 1px 0 #191919, 0 -1px #191919;
+}
+
+table td#operationButton:hover {
+    background-image: linear-gradient(#545454, #545454, #545454, #3b3b3b, #242424, #242424, #242424);
+}
+
+table td#operationButton:active {
+    background-image: linear-gradient(#474747, #474747, #474747, #2e2e2e, #171717, #171717, #171717);
+}
+
+table td#clearButton {
+    background-image: linear-gradient(#c20000, #c20000, #c20000, #8f0000, #610000, #610000, #610000);
+    color: #f2f2f2;
+    text-shadow: -1px 0 #191919, 0 1px #191919, 1px 0 #191919, 0 -1px #191919;
+}
+
+table td#clearButton:hover {
+    background-image: linear-gradient(#a80000, #a80000, #a80000, #750000, #470000, #470000, #470000);
+}
+
+table td#clearButton:active {
+    background-image: linear-gradient(#8f0000, #8f0000, #8f0000, #5c0000, #2e0000, #2e0000, #2e0000);
+}
