@@ -1,0 +1,27 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <img id="myImage" />
+        <button onClick="doSomething()">Previous</button>
+        <button onClick="doSomething()">Next</button>
+        <script>
+            let index = 0;
+            const images = ["fjl_3", "flj_8", "flj_11", "fll_14", "furio_header"]
+            function doSomething(isNext) {
+                const imageTag = document.getElementById("myImage");
+                imageTag.src = `picture/${images[index]}.png`;
+                index = isNext ? index++: index--;
+                if (isNext) {
+                    index += 1;
+                } else {
+                    index -= 1;
+                }
+                if (index > images.length) {
+                    index = index % images.length;
+                }   
+            }
+        </script>
+    </body>
+</html>
