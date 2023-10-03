@@ -3,32 +3,35 @@
         
     </head>
     <body>
-        <table>
+        <table border="1" cellpadding="6" cellspacing="0">
             <tr>
                 
             </tr>
         </table>
         <script>
             const table = document.querySelector("table");
-            const n = prompt("YO SHIT FOR BRAINS, CHOOSE A NUMBER:");
+            const n = prompt("Choose a Number:");
             alert(n);
             let output = "";
-            for (let i = 1; i <= n; i++) {
-                for (let j = 1; j <= n; j++) {
-                    output += `<td>${i * j}</td>`
+
+            for (let row = 1; row <= n; row++) {
+                output += "<tr>"
+                    if (row == 1) {
+                        for (let column = 1; column <= n; column++) {
+                            output += `<th>${column}</th>`
+                    }
+                    continue;
+                }
+                for (let column = 1; column <= n; column++) {
+                    if (column == 1) {
+                        output += `<th>${row}</th>`
+                    }
+                    else {
+                        output += `<td>${row * column}</td>`
+                    }
                 }
                 output += "</tr>"
             }
-
-            /*const rows = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-            const columns = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-            let output = "";
-            for (const row of rows) { // nested for loop
-                for (const column of columns) {
-                    output += `<td>${row * column}</td>`
-                }
-            }*/
-            
             table.innerHTML = output;
         </script>
     </body>
