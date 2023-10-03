@@ -9,32 +9,32 @@
         <script src="calculator.js"></script>
         <div id="calcBody">
             <div>
-                <input type="text" id="calcDisplay" value="0">
+                <input type="text" id="calcDisplay" value="0" readonly>
             </div>
             <table>
                 <tr>
-                    <td onclick="workingButton(event)" id="numberButton">7</td>
-                    <td onclick="workingButton(event)" id="numberButton">8</td>
-                    <td onclick="workingButton(event)" id="numberButton">9</td>
-                    <td onclick="workingButton(event)" id="operationButton">+</td>
+                    <td onclick="displayOperation(event)" id="numberButton">7</td>
+                    <td onclick="displayOperation(event)" id="numberButton">8</td>
+                    <td onclick="displayOperation(event)" id="numberButton">9</td>
+                    <td onclick="displayOperation(event)" id="operationButton">+</td>
                 </tr>
                 <tr>
-                    <td onclick="workingButton(event)" id="numberButton">4</td>
-                    <td onclick="workingButton(event)" id="numberButton">5</td>
-                    <td onclick="workingButton(event)" id="numberButton">6</td>
-                    <td onclick="workingButton(event)" id="operationButton">-</td>
+                    <td onclick="displayOperation(event)" id="numberButton">4</td>
+                    <td onclick="displayOperation(event)" id="numberButton">5</td>
+                    <td onclick="displayOperation(event)" id="numberButton">6</td>
+                    <td onclick="displayOperation(event)" id="operationButton">-</td>
                 </tr>
                 <tr>
-                    <td onclick="workingButton(event)" id="numberButton">1</td>
-                    <td onclick="workingButton(event)" id="numberButton">2</td>
-                    <td onclick="workingButton(event)" id="numberButton">3</td>
-                    <td onclick="workingButton(event)" id="operationButton">x</td>
+                    <td onclick="displayOperation(event)" id="numberButton">1</td>
+                    <td onclick="displayOperation(event)" id="numberButton">2</td>
+                    <td onclick="displayOperation(event)" id="numberButton">3</td>
+                    <td onclick="displayOperation(event)" id="operationButton">x</td>
                 </tr>
                 <tr>
-                    <td onclick="workingButton(event)" id="clearButton">C</td>
-                    <td onclick="workingButton(event)" id="numberButton">0</td>
-                    <td onclick="workingButton(event)" id="operationButton">=</td>
-                    <td onclick="workingButton(event)" id="operationButton">/</td>
+                    <td onclick="displayOperation(event)" id="clearButton">C</td>
+                    <td onclick="displayOperation(event)" id="numberButton">0</td>
+                    <td onclick="displayOperation(event)" id="operationButton">=</td>
+                    <td onclick="displayOperation(event)" id="operationButton">/</td>
                 </tr>
             </table>
         </div>
