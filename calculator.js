@@ -1,6 +1,4 @@
 function displayOperation() {
-    let answer = "";
-    const n = ("Choose a Number");
     let operation = event.currentTarget.innerText;                    // get text from buttons
     if (document.getElementById("calcDisplay").value == "0") {          // if 0 is still displayed
         document.getElementById("calcDisplay").value = operation;           // replace it with input
@@ -8,40 +6,55 @@ function displayOperation() {
     else {
         document.getElementById("calcDisplay").value += operation;
     }
-    if (document.getElementById("calcDisplay").value.includes("=")) {
-        doOperation(operation);
-    }
 }
 
-function doOperation(o) {
-    let func = o;
+function doOperation() {
+    let o = document.getElementById("calcDisplay").value;
+    let answer = ""
     let a = "";
     let b = "";
-    let add = o.search("+");
-    let sub = o.search("-");
-    let mul = o.search("*");
-    let div = o.search("/");
-    if (Boolean(add)) {
-        const funcOperation = text.split("+");
+    let ad = o.search("[+]");
+    let su = o.search("[-]");
+    let mu = o.search("x");
+    let di = o.search("[/]");
+    if (ad == 1) {
+        let funcOperation = o.split("+");
         a = funcOperation[0];
         b = funcOperation[1];
-        
-    } else if (Boolean(sub)) {
-
-    } else if (Boolean(mul)) {
-
-    } else if (Boolean(div)) {
-
+        answer = +a + +b;
+        return displayAnswer(answer);
+    } else if (su == 1) {
+        let funcOperation = o.split("-");
+        a = funcOperation[0];
+        b = funcOperation[1];
+        answer = a - b;
+        return displayAnswer(answer);
+    } else if (mu == 1) {
+        let funcOperation = o.split("x");
+        a = funcOperation[0];
+        b = funcOperation[1];
+        a * 1;
+        b * 1;
+        answer = a * b;
+        return displayAnswer(answer);
+    } else if (di == 1) {
+        let funcOperation = o.split("/");
+        a = funcOperation[0];
+        b = funcOperation[1];
+        answer = +a / +b;
+        return displayAnswer(answer);
     } else {
-        return "error";
-    }
-    document.getElementById("demo").innerHTML = myArray[1]; 
+        answer = ("error");
+        return displayAnswer(answer);
+    } 
 }
 
 function displayAnswer (an) {
-    
+    document.getElementById("calcDisplay").value = an;
+    operation = an;
 }
 
-function clear() {
-    
+function clearButton() {
+    document.getElementById("calcDisplay").value = 0;
+    operation = 0;
 }
