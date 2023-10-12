@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <ul></ul>
+        <script>
+            const list = document.querySelector("ul");
+            let output = "";
+            fetch('https://jsonplaceholder.typicode.com/todos')
+            .then(response => response.json())
+            .then(json => {
+                for (let data of json) {
+                    output += `<li>${data.title}</li>`;
+                }
+                list.innerHTML = output;
+            });
+        </script>
+    </body>
+</html>
