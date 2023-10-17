@@ -14,8 +14,11 @@
                 for (let data of json) {
                     output += `<li>${data.title}</li>`;
                 }
-                list.innerHTML = output;
             });
+
+            setTimeout(() => {
+                list.innerHTML = output;
+            }, 3000);
         </script>
     </body>
 </html>
