@@ -46,6 +46,7 @@
                                     divSet.add(item.division);
                                 }
                                 const list = document.querySelector("ul")
+                                let output = "";
                                 fetch("https://www.balldontlie.io/api/v1/teams")
                                 .then((response) => response.json())
                                 .then(json => {
@@ -54,9 +55,8 @@
                                             output += `<li>${item.full_name}</li>`;
                                         }
                                     }
+                                    list.innerHTML = output;
                                 });
-
-                                list.innerHTML = output;
                             });
                         });
                     });
