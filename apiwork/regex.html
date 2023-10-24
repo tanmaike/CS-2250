@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .invalid { border: 2px solid red; }
+            .valid { border: 2px solid green; }
+        </style>
+    </head>
+    <body>
+        <!-- validate happy -->
+        <input type="text" required />
+        <script>
+            document.querySelector("input").addEventListener("keyup", (event) => {
+                const pattern = /happy/;
+                if (pattern.test(event.currentTarget.value)) {
+                    event.currentTarget.className = "valid";
+                } else {
+                    event.currentTarget.className = "invalid";
+                }
+            });
+        </script>
+    </body>
+</html>

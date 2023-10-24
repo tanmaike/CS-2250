@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!-- GOOD TO AVOID 429 "TOO MANY REQUESTS" ERRORS -->
+<html>
+    <head>
+
+    </head>
+    <body> 
+
+        <script>
+            const confToDiv = {}    // Key is conference, value is array
+            const divToTeam = {}    // Key is division, value array of
+
+            fetch("https://www.balldontlie.io/api/v1/teams")
+                .then((response) => response.json())
+                .then((json) => {
+                    for (let item of json.data) {
+                        if (item.conference in confToDiv) {
+                            const divisions = confToDiv[item.conference];
+                            divisions.add(item.divisions);
+                        } else {
+                            const newSet = new Set();
+                            newSet.add(item.division);
+                            confToDiv[item.conference] = newSet;
+                        }
+
+                        if (item.division in divToTeam) {
+                            const teams = divToTeam[item.division];
+                            teams.add(item.full_name);
+                        } else {
+                            const newSet = new Set();
+                            newSet.add(item.full_name);
+                            divToTeam[item.division] = newSet;
+                        }
+                    }
+                });
+        </script>
+    </body>
+</html>
