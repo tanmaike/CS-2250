@@ -51,6 +51,10 @@ for (const detail of details) {
 
           const commentText = document.createElement("p");
           let commentContent = comment.body;
+
+          const newlinerg = /\n/gi;
+          commentContent = commentContent.replaceAll(newlinerg, "<br/>");
+          
           const commentContentNode = document.createTextNode(commentContent);
           commentText.appendChild(commentContentNode);
 
@@ -64,6 +68,7 @@ for (const detail of details) {
           commentP.appendChild(commentAside);
           commentAside.appendChild(commentText);
           commentAside.appendChild(commentNameSection);
+          commentText.innerHTML = commentContent;
           commentNameSection.appendChild(commentName);
         }
       }
