@@ -30,3 +30,10 @@ h2 {
 .moveList {
   margin-left: 60px;
 }
+
+#bdlAPI table, th, td {
+  border:1px solid black;
+  padding-left: 3px;
+  padding-right: 3px;
+  text-align: center;
+}
