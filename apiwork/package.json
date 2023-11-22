@@ -1,9 +1,0 @@
-{
-    "scripts":{
-        "start": "browser-sync start --server --startPath challenge.html --files '*.html, *.css, *.js'",
-        "whatever": "echo 'Ethan is here'"
-    },
-    "dependencies": {
-        "browser-sync": "^2.29.3"
-    }
-}
